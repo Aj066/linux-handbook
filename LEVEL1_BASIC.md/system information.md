@@ -1,21 +1,43 @@
-## Check CPU info
+## 📌 4. System Information & Validation
+
+### **Check CPU Info**
+
+```bash
 lscpu
 cat /proc/cpuinfo
+```
 
-## Check RAM
+### **Check RAM**
+
+```bash
 free -h
 cat /proc/meminfo
+```
 
-## Check Disks
+### **Check Disks**
+
+```bash
 df -h
 lsblk
+```
 
-## Inspect Running Processes
+### **Inspect Running Processes**
+
+```bash
 top
+```
 
-## Install & Run htop
+Install & run htop:
+
+```bash
 sudo apt install htop -y
 htop
+```
 
-## List Processes
+List processes:
+
+```bash
 ps aux | grep service-name
+```
+
+---
