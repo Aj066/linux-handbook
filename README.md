@@ -3,7 +3,6 @@
 │   ├── LEVEL1_BASIC.md
 │   ├── LEVEL2_INTERMEDIATE.md
 │   ├── LEVEL3_ADVANCED.md
-│   └── LEVEL4_EXPERT.md
 └── docs/
     └── OVERVIEW.md
 
@@ -15,8 +14,7 @@ This roadmap is divided into four progressive levels:
 
 - **Level 1 — Basic:** Foundation of Linux server administration  
 - **Level 2 — Intermediate:** Daily DevOps operations  
-- **Level 3 — Advanced:** Production-ready systems  
-- **Level 4 — Expert (Optional):** Automation & infrastructure-as-code  
+- **Level 3 — Advanced:** Production-ready systems    
 
 Each level is detailed in the `/roadmap` folder.
 
@@ -27,7 +25,6 @@ Each level is detailed in the `/roadmap` folder.
 - [Level 1 — Basic](LEVEL1_BASIC.md)
 - [Level 2 — Intermediate](LEVEL2_INTERMEDIATE.md)
 - [Level 3 — Advanced](LEVEL3_ADVANCED.md)
-- [Level 4 — Expert](LEVEL4_EXPERT.md)
 
 ---
 
