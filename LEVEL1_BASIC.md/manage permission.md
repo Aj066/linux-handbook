@@ -1,11 +1,25 @@
-# To able to add user need to use the command of 
-sudo adduser "username"
+# Apply coorect ownership
+sudo chown -R devuser1:dev /var/www/app
 
-# To create groups
-sudo groupadd "groupname"
+# To change a file permissions
+chmod 777 "filename"
 
-# Add user in group 
-sudo usermod -aG groupname "username"
+# Use groups for collaboration
+sudo chmod -R 770 /var/www/app
 
-# Configure Default Shells
-sudo usermod --shell /bin/bash devuser1
+# Manage Directory ACLs (setfacl):
+## grant group RWX
+sudo setfacl -m g:dev:rwx /var/www/app
+
+## Grant ops group read-only
+sudo setfacl -m g:ops:rx /var/www/app
+
+## Check ACL
+getfacl /var/www/app
+
+# Understanding umask:
+## Temporary
+umask 022
+
+## Permanent(add to /etc/profile or ~/.bashrc):
+umask 002
