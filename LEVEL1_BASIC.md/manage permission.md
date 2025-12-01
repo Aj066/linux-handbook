@@ -1,25 +1,49 @@
-# Apply coorect ownership
+## 📌 2. File & Directory Permissions
+
+### **Apply Correct Ownership**
+
+```bash
 sudo chown -R devuser1:dev /var/www/app
+```
 
-# To change a file permissions
-chmod 777 "filename"
+### **Use Groups for Collaboration**
 
-# Use groups for collaboration
+```bash
 sudo chmod -R 770 /var/www/app
+```
 
-# Manage Directory ACLs (setfacl):
-## grant group RWX
+### **Manage Directory ACLs (setfacl)**
+
+Grant dev group RWX:
+
+```bash
 sudo setfacl -m g:dev:rwx /var/www/app
+```
 
-## Grant ops group read-only
+Grant ops group read-only:
+
+```bash
 sudo setfacl -m g:ops:rx /var/www/app
+```
 
-## Check ACL
+Check ACL:
+
+```bash
 getfacl /var/www/app
+```
 
-# Understanding umask:
-## Temporary
+### **Understanding umask**
+
+Temporary:
+
+```bash
 umask 022
+```
 
-## Permanent(add to /etc/profile or ~/.bashrc):
+Permanent (add to `/etc/profile` or `~/.bashrc`):
+
+```bash
 umask 002
+```
+
+---
