@@ -16,7 +16,7 @@ This roadmap is divided into four progressive levels:
 - **Level 2 — Intermediate:** Daily DevOps operations  
 - **Level 3 — Advanced:** Production-ready systems    
 
-Each level is detailed in the `/roadmap` folder.
+Each level is detailed in the `/roadmap` folder
 
 ---
 
@@ -308,7 +308,6 @@ uptime
 ```bash
 lshw
 lscpu
-lsusb
 lspci
 ```
 
